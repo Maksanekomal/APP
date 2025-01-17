@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            margin:100px;
+            background:whitesmoke;
+            
+        }
+
+        .table-container {
+            text-align: center;
+            width: 50%;
+            border:0px solid #fbd44c;
+            padding:0;
+            width:auto;
+            box-shadow: 0 5px 5px #fbd44c;
+        }
+
+        .table-heading {
+            background-color: #fbd44c;
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse:separate;
+            border-spacing: 2px;
+            border: 1px;
+            padding: 3px;
+            background-color: #fbd44c;
+            text-align: center;
+        }
+
+        table th, table td {
+            padding: 20px;
+            text-align: center;
+            border:1px solid #fbd44c;
+
+        }
+
+        table th {
+            background-color:#ff4c4c;
+            color: white ;
+            font-size: 18px;
+        }
+
+        table td {
+            background-color: lightgreen;
+            font-size: 16px;
+
+        }
+        tr{
+           background-color: #fbd44c;
+           border:none;
+           padding-inline: 2px;
+           font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <div class="table-heading">Make HTML Table</div>
+        <table bgcolor="#fbd44c" cellspacing="10" cellpadding="10" frame="void" border="1" >
+            <thead>
+                <tr >
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody bgcolor="#fbd44c">
+                <tr>
+                    <td>James</td>
+                    <td>Jeo</td>
+                    <td>CEO</td>
+                    <td>$1300</td>
+                </tr>
+                <tr>
+                    <td>Kate</td>
+                    <td>Harns</td>
+                    <td>Designer</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Bryan</td>
+                    <td>Brian</td>
+                    <td>Team Leader</td>
+                    <td>$700</td>
+                </tr>
+                <tr>
+                    <td>Lesely</td>
+                    <td>Prcnic</td>
+                    <td>Author</td>
+                    <td>$500</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
