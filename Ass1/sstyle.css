@@ -1,53 +1,405 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-  }
-  
-  .table-container {
-    width: 80%;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 1, 0.1);
-  }
-  
-  .row {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .row:last-child {
-    border-bottom: none;
-  }
-  
-  .cell {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .cell img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  
-  .cell:last-child {
-    justify-content: flex-end;
-    text-align: right;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .cell input[type="search"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Top Header */
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.bbc-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.9em;
+}
+
+.search-bar input {
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 300px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+}
+
+.service .icon {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f2ef;
+}
+.linkedin-header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ebeff0;
+  padding:10px 20px;
+  color:white;
+  position: sticky;
+  top:0;
+}
+.linkedin-header .logo img{
+  width:40px;
+}
+.linkedin-header .search-bar{
+  flex:1;
+  margin:0 20px;
+}
+.linkedin-header .search-bar input{
+  width:100px;
+  padding:8px;
+  border-radius: 4px;
+  border:none;
+}
+.linkedin-header .icon {
+  display:flex;
+  align-items: center;
+  align-content: center;
+  gap:20px;
+  margin:0 auto;
+  margin-right: 50px;
+}
+.linkedin-header  .icon img{
+ width:40px;
+ align-items:center;
+ object-fit: contain;
+
+}
+.linkedin-header  .profile img{
+  width:30px;
+}
+
+body{
+  margin:5;
+  font-family: arial, sans-serif;
+  background-color: #fafafa;
+}
+.insta-header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom:1px solid #dbdbdb;
+  padding:10px 20px;
+  box-shadow: 1 2 2 1;
+}
+.insta-header .logos img{
+  width:40px;
+}
+.insta-header .search-bar input{
+  width:200px;
+  padding:5px 10px;
+  border-radius:5px;
+  border:1px solid #dbdbdb;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.insta-header .nav-icons{
+  display:flex;
+  gap:20px;
+}
+.insta-header .nav-icons .icons img{
+  width:30px;
+  height:30px;
+  cursor:pointer;
+  transition:transform 0.2s;
+}
+.insta-header .nav-icons .icons img:hover{
+  transform:scale(1.1);
+}
+
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+.youtube-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+/* Logo */
+.youtube-header .logo img {
+  height: 30px;
+}
+
+/* Search Bar */
+.youtube-header .search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.youtube-header .search-bar input {
+  flex: 1;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 2px 0 0 2px;
+}
+
+.youtube-header .search-bar .search-button {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-left: none;
+  background-color: #f8f8f8;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+.youtube-header .search-bar .search-button img {
+  height: 20px;
+}
+
+/* Navigation Icons */
+.youtube-header .nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.youtube-header .nav-icons .icon img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.youtube-header .nav-icons .icon img:hover {
+  transform: scale(1.1);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.fb-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1877f2;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 16px;
+}
+
+.nav-icons a {
+  margin: 0 10px;
+}
+
+.nav-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.gmail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d93025;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6a1b9a;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+  color: #6a1b9a;
+  padding: 5px 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.version {
+  font-size: 14px;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.download-btn {
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.download-btn:hover {
+  background-color: white;
+  color: #6a1b9a;
+}
+
+.header2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(240, 226, 226);
+  padding: 10px 20px;
+  color: white;
+}
+
+.logoo {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+  color:black;
+  padding: 5px 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
