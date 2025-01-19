@@ -20,7 +20,11 @@ body {
   font-size: 1.5em;
   font-weight: bold;
 }
-
+.nav-links{
+  text-align: center;
+  justify-content: center;
+  
+}
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -32,6 +36,7 @@ body {
   padding: 5px;
   border-radius: 4px;
   border: none;
+  color:white;
 }
 
 /* Services Section */
