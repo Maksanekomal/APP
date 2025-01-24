@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "aside articles articles"
+      "footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f3d7d7;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #88d8c0;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .aside {
+    grid-area: aside;
+    background-color: #6fc3df;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    height:200px;
+    text-align: center;
+  }
+  
+  .articles {
+    grid-area: articles;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    padding: 10px;
+    background-color: #f9a3a4;
+    align-items: end;
+   
+  }
+  
+  .article {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    height: 100px;
+    margin:0;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #88d8c0;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
