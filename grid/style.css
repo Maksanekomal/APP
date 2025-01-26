@@ -1,72 +1,65 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    box-sizing: border-box;
   }
   
-  
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      "header header header"
-      "aside articles articles"
-      "footer footer footer";
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: auto;
-    gap: 10px;
-    padding: 20px;
-    background-color: #f3d7d7;
+  body {
+    font-family: Arial, sans-serif;
   }
   
-  .header {
-    grid-area: header;
-    background-color: #88d8c0;
-    text-align: center;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    font-size: 1.5em;
+    background-color: #333;
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
     font-weight: bold;
   }
   
-  .aside {
-    grid-area: aside;
-    background-color: #6fc3df;
-    padding: 20px;
-    font-size: 1.2em;
-    font-weight: bold;
-    height:200px;
-    text-align: center;
+  .nav-links {
+    list-style: none;
+    display: flex;
   }
   
-  .articles {
-    grid-area: articles;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:10px;
-    padding: 10px;
-    background-color: #f9a3a4;
-    align-items: end;
-   
+  .nav-links li {
+    margin: 0 15px;
   }
   
-  .article {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-    height: 100px;
-    margin:0;
-    justify-content: center;
-    align-items: flex-end;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
   }
   
-  .footer {
-    grid-area: footer;
-    background-color: #88d8c0;
-    text-align: center;
-    padding: 20px;
-    font-size: 1.2em;
-    font-weight: bold;
+  .nav-links a:hover {
+    text-decoration: underline;
   }
+  
+  .searchbar input {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .searchbar button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .searchbar button:hover {
+    background-color: #777;
+  }
+  
